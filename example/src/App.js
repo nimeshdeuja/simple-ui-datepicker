@@ -1,10 +1,23 @@
 import React from 'react'
 
-import { ExampleComponent } from 'simple-ui-datepicker'
-import 'simple-ui-datepicker/dist/index.css'
+import { DatePick } from 'simple-ui-datepicker'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <DatePick
+      fullWidth={true}
+      variant='outlined'
+      label='DOB'
+      className='myClass'
+      value={new Date()}
+      min={new Date()}
+      hideMaxDate={true}
+      max={new Date()}
+      changed={(item) => console.log(item)}
+      size='medium'
+      language='pt'
+    />
+  )
 }
 
 export default App

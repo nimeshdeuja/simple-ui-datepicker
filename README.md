@@ -1,30 +1,32 @@
 # simple-ui-datepicker
 
-> Made with create-react-library
-
-[![NPM](https://img.shields.io/npm/v/simple-ui-datepicker.svg)](https://www.npmjs.com/package/simple-ui-datepicker) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+> Simple ui datepicker width @material-ui/pickers, styled-components, moment
 
 ## Install
 
 ```bash
-npm install --save simple-ui-datepicker
+npm i --save simple-ui-datepicker
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'simple-ui-datepicker'
-import 'simple-ui-datepicker/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+import { DatePick } from 'simple-ui-autocomplete'
+<DatePick
+  fullWidth={true}
+  variant='outlined' // options 'outlined'
+  label='DOB'
+  className='myClass'
+  value={new Date()}
+  min={new Date()} // min date user can select
+  hideMaxDate={true}
+  max={new Date()} // max date user can select if hideMaxDate is true
+  changed={(item)=>}
+  size='medium' // options 'small','medium','large'
+  language='en' // options 'en','pt'
+/>
 ```
 
-## License
+## Author
 
-MIT © [](https://github.com/)
+Nimesh Deuja
