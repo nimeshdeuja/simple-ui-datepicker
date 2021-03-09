@@ -114,6 +114,17 @@ const InputStyled = styled.div`
             display:flex;
             margin-bottom:${margin};
             width:100%;
+            .MuiInputBase-root:focus,
+            .MuiFormControl-root:focus,
+            input{
+              border: none;
+              -webkit-appearance: none;
+              -ms-accelerator: none;
+              -moz-appearance: none;
+              appearance: none;
+              resize: none;
+              outline: none;
+            }
         `
   }}
 `
