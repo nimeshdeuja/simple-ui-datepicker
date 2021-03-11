@@ -5,13 +5,13 @@
 ## Install
 
 ```bash
-npm i --save simple-ui-datepicker
+npm i simple-ui-datepicker
 ```
 
 ## Usage
 
 ```jsx
-import { DatePick } from 'simple-ui-autocomplete'
+import { DatePick } from 'simple-ui-datepicker'
 <DatePick
   fullWidth={true}
   variant='standard' // options 'outlined','filled','standard'
